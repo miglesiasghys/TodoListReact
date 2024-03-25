@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import ContainCard from './components/ContainCards';
 import Footer from './components/Footer';
+import Select from './components/Select'
 
 //localStorage.clear()
 
@@ -22,7 +23,6 @@ function App() {
 
   const btnEliminar=(id)=>{
     setListaTareas(listaTareas.filter(tarea => tarea.id != id))
-    console.log(id)
   }
   
   const btnHecho=(id)=>{
@@ -32,13 +32,14 @@ function App() {
   return (
     <>
     <CssBaseline />
-    <Container maxWidth="false" sx={{backgroundColor: "beige"}}>
+    <Container maxWidth="false" sx={{backgroundColor: "black"}}>
       <Header/>
       <Grid container>
-        <Grid item xs={6}>
+        <Grid item xs={5}>
           <Form handlerAgregarTarea={handlerAgregarTarea}/>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={7}>
+          <Select/>
           <ContainCard listaTareas={listaTareas} btnEliminar={btnEliminar} btnHecho={btnHecho}/>
         </Grid>
       </Grid>

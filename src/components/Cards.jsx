@@ -18,8 +18,9 @@ export default function Cards({
   return (
     <>
       <CssBaseline />
-      <Grid container>
-        <Grid>
+      <Card sx={{margin: "10px"}}>
+      <Grid container item xs={6} >
+        <Grid item xs={6}>
           <Typography>
             {tarea}
           </Typography>
@@ -35,6 +36,7 @@ export default function Cards({
           </Button>
         </Grid>
       </Grid>
+      </Card>
     </>
   )
 }
