@@ -6,7 +6,7 @@ import Alert from '@mui/material/Alert';
 import CheckIcon from '@mui/icons-material/Check';
 import CssBaseline from '@mui/material/CssBaseline';
 
-export default function ContainCards({ listaTareas, btnEliminar, btnHecho }) {
+export default function ContainCards({taskList, deleteBtn}) {
   return (
     <>
       <CssBaseline />
@@ -19,14 +19,13 @@ export default function ContainCards({ listaTareas, btnEliminar, btnHecho }) {
         padding:"20px", 
         margin:"0px 40px"}}>
         <Grid container >
-          {listaTareas ? listaTareas.map((tarea) =>
+          {taskList ? taskList.map((task) =>
               <Cards
                 key={crypto.randomUUID()}
-                id={tarea.id}
-                tarea={tarea.tarea}
-                hecha={tarea.hecha}
-                btnEliminar={btnEliminar}
-                btnHecho={btnHecho}
+                id={task.id}
+                tarea={task.tarea}
+                completa={task.completa}
+                deleteBtn={deleteBtn}
               />) : <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">Sin tareas</Alert>}
         </Grid>
       </Box>
