@@ -6,15 +6,15 @@ import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Checkbox from '@mui/material/Checkbox';
 import Delete from '@mui/icons-material/Delete';
+import AutoAwesome from '@mui/icons-material/AutoAwesome'
 
 export default function Cards({
-  tarea,
-  estado,
+  task,
+  state,
   deleteBtn,
   completeTaskBtn,
   id
 }) {
-
 
   return (
     <>
@@ -29,18 +29,20 @@ export default function Cards({
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"
         }}>
         <Grid container sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-          <Grid item xs={9} display="flex" sx={{ margin: "0px 10px", justifyContent: "space-araund", alignItems: "center" }}>
-            <Typography variant="h6"
+          <Grid item md= {10} xs={6} display="flex" sx={{ margin: "0px 8px", justifyContent: "space-araund", alignItems: "center" }}>
+            <AutoAwesome fontSize="small"/>
+            <Typography variant="body1"
               sx={{
+                padding:"0px 10px",
                 fontFamily: "Poppins, sans-serif",
                 fontWeight: "400"
               }}>
-              {tarea}
+              {task}
             </Typography>
           </Grid>
           <Grid item>
-            <IconButton onClick={() => completeTaskBtn(id)}>
-              <Checkbox />
+            <IconButton >
+              <Checkbox checked={state} onChange={() => completeTaskBtn(id)}/>
             </IconButton>
           </Grid>
           <Grid item>

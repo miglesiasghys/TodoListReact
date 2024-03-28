@@ -15,17 +15,17 @@ export default function ContainCards({ taskList, deleteBtn, completeTaskBtn }) {
         backgroundSize: "cover",
         backgroundPosition: "center",
         borderRadius: "40px",
+        width: "95%",
         minHeight: "60vh",
-        padding: "20px",
-        margin: "0px 40px"
+        padding: "10px"
       }}>
         <Grid container >
           {taskList ? taskList.map((task) =>
             <Cards
               key={crypto.randomUUID()}
               id={task.id}
-              tarea={task.tarea}
-              estado={task.estado}
+              task={task.task}
+              state={task.state}
               deleteBtn={deleteBtn}
               completeTaskBtn={completeTaskBtn}
             />) : <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">Sin tareas</Alert>}
