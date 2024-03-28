@@ -1,8 +1,32 @@
-# React + Vite
+# Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de Todo List desarrollado con React. Puedes encontrar la aplicación deployada [aquí](https://todo-list-inky-five.vercel.app/).
 
-Currently, two official plugins are available:
+![Captura de app](public/print1.jpg)
+![Captura de app](public/print2.jpg)
+![Captura de app en modo mobile](public/print3.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descripción
+
+Este proyecto es una simple aplicación de lista de tareas donde los usuarios pueden agregar nuevas tareas, marcarlas como completadas y eliminarlas de la lista.
+
+## Características
+
+- Agregar nuevas tareas.
+- Marcar tareas como completadas.
+- Eliminar tareas de la lista.
+- Diseño responsive para adaptarse a diferentes tamaños de pantalla.
+
+## Instalación
+
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+1. Clona este repositorio en tu máquina local:
+
+## Tecnologías Utilizadas
+
+- React
+- Material-UI
+
+## Autor
+Este proyecto fue desarrollado por Maca Iglesias Ghys.
