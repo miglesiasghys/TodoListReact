@@ -1,6 +1,6 @@
-# ToDo List
+# Todo List
 
-Este es un proyecto de ToDo List desarrollado con React. Puedes encontrar la aplicación deployada [aquí](https://todo-list-inky-five.vercel.app/).
+Este es un proyecto de Todo List desarrollado con React. Puedes encontrar la aplicación deployada [aquí](https://todo-list-inky-five.vercel.app/).
 
 ![Captura de app](public/print1.jpg)
 ![Captura de app](public/print2.jpg)
